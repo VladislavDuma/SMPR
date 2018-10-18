@@ -2,7 +2,7 @@
 <p><a href="#Metricheskiye_algoritmy">Метрические алгоритмы</a></p>
 <p><a href="#a1NN">1NN</a></p>
   <p><a href="#akNN">kNN</a></p>
-  ## Метрические методы <a name="Metricheskiye_algoritmy"></a>
+  <p>## Метрические методы <a name="Metricheskiye_algoritmy"></a></p>
   ### Метод 1NN <a name="a1NN"></a>
 <p><ol>
     <li>Подбирается метрика. В данном методе используется евклидова метрика .</li>
