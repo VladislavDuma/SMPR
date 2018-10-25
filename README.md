@@ -41,6 +41,8 @@
 
 ![kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/kNN_allelem_k10_1.png)
 
+![LOO_for_kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/LOO_for_KNN1.png)
+
 Достоинства алгоритма:
 1. Простота реализации
 2. Хорошее качество, при правильно подобранной метрике и параметре *k*
