@@ -1,7 +1,7 @@
 
-euclide <- function(u, v) #metrik
+euclide <- function(u, v)
 {
-  sqrt(sum(u - v)^2)
+  sqrt(sum((u - v)^2))
 }
 
 sortObjectByDist <- function(xl, z, metricFunction = euclide) # Sort
@@ -33,7 +33,7 @@ kNN <- function(xl, z, k) #kNN method
 drowPoints <- function(xl)
 {
   colors <- c("setosa" = "red", "versicolor" = "green3", "virginica" = "blue")
-  plot(xl[1:2], pch = 21, bg = colors[xl$Species], col = colors[xl$Species],main = "Ìåòîä êëàññèôèêàöèè kNN ïðè k = 10", asp = 1)
+  plot(xl[1:2], pch = 21, bg = colors[xl$Species], col = colors[xl$Species],main = "ÃŒÃ¥Ã²Ã®Ã¤ ÃªÃ«Ã Ã±Ã±Ã¨Ã´Ã¨ÃªÃ Ã¶Ã¨Ã¨ kNN Ã¯Ã°Ã¨ k = 10", asp = 1)
   
   for(i in seq(0, 7, 0.1)){
     for(j in seq(0, 2.5, 0.1))
