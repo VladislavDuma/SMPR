@@ -16,7 +16,7 @@
 
 Пример работы *1NN* при использовании в качестве обучающей выборки Ирисы Фишера:
 
-![1NN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/1nn_allelem_1.png)
+![1NN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/1nn_allelem_2.png)
 
 Для проверки оптимальности *k* используется Критерий Скользящего Контроля *LOO* (Leave One Out).
 Данный критерий проверяет оптимальность значения *k* следующим образом:
