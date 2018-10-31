@@ -39,9 +39,15 @@
 	}
 где *xl* - обучающая выборка.
 
+Пример работы метода kNN при k = 10 даёт следующий результат.
+
 ![kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/kNN_10elem_2.png)
 
+Применив критерий *LOO* для получения оптимального *k* мы получаем следующий ответ:
+
 ![LOO_for_kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/LOO_for_kNN_3.png)
+
+Следовательно оптимальным *k* на выборке Ирисы Фишера явлется значение *k = 6*. Построим графики *kNN*0 и *LOO*:
 
 Достоинства алгоритма:
 1. Простота реализации
