@@ -1,7 +1,7 @@
 
 euclide <- function(u, v)
 {
-  sqrt(sum(u - v)^2)
+  sqrt(sum((u - v)^2))
 }
 
 sortObjectByDist <- function(xl, z, metricFunction = euclide)
@@ -62,7 +62,7 @@ LOO <- function(xl, len){ # LOO function
   
   result <- res/len
   
-  plot(1:len, result, type = "l", col = "red", main = "LOO äëÿ kNN",xlab = "Çíà÷åíèå k",ylab = "Çíà÷åíèå LOO")
+  plot(1:len, result, type = "l", col = "red", main = "LOO Ã¤Ã«Ã¿ kNN",xlab = "Ã‡Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥ k",ylab = "Ã‡Ã­Ã Ã·Ã¥Ã­Ã¨Ã¥ LOO")
   
   min = which.min(result)
   label = paste("k = ", min, "\n", "LOO = ", result[min])
