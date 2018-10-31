@@ -39,7 +39,7 @@
 	}
 где *xl* - обучающая выборка.
 
-![kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/kNN_allelem_k10_1.png)
+![kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/kNN_10elem_2.png)
 
 ![LOO_for_kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/LOO_for_KNN1.png)
 
