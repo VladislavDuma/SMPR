@@ -2,7 +2,7 @@
 
 euclide <- function(u, v)
 {
-  sqrt(sum(u - v)^2)
+  sqrt(sum((u - v)^2))
 }
 
 
@@ -11,12 +11,12 @@ sortObjectByDist <- function(xl, z, metricFunction = euclide)
   l <- dim(xl)[1]
   n <- dim(xl)[2] - 1
   
-  distances <- rep(0, l) #âåêòîð íà L ýëåìåíòîâ, çàïîëíåííûé 0
+  distances <- rep(0, l) #Ã¢Ã¥ÃªÃ²Ã®Ã° Ã­Ã  L Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã®Ã¢, Ã§Ã Ã¯Ã®Ã«Ã­Ã¥Ã­Ã­Ã»Ã© 0
   for (i in 1:l)
   {
-    distances[i] <- c(metricFunction(xl[i, 1:n], z)) # âåêòîð ñ ðàññòîÿíèÿìè
+    distances[i] <- c(metricFunction(xl[i, 1:n], z)) # Ã¢Ã¥ÃªÃ²Ã®Ã° Ã± Ã°Ã Ã±Ã±Ã²Ã®Ã¿Ã­Ã¨Ã¿Ã¬Ã¨
   }
-  orderedXl <- xl[order(distances), ] # ñîðòèðóåò âåêòîð äèñòàíöèè ïî èíäåêñàì
+  orderedXl <- xl[order(distances), ] # Ã±Ã®Ã°Ã²Ã¨Ã°Ã³Ã¥Ã² Ã¢Ã¥ÃªÃ²Ã®Ã° Ã¤Ã¨Ã±Ã²Ã Ã­Ã¶Ã¨Ã¨ Ã¯Ã® Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã Ã¬
   return (orderedXl)
 }
 
@@ -26,7 +26,7 @@ oneNN <- function(xl, z)
   orderedXl <- sortObjectByDist(xl, z)
   n <- dim(orderedXl)[2]
   
-  classes <- orderedXl[1, n] # óáðàë -1 & +1, òàê êàê äà¸ò äîñòóï ê òåì æå äàííûì
+  classes <- orderedXl[1, n] # Ã³Ã¡Ã°Ã Ã« -1 & +1, Ã²Ã Ãª ÃªÃ Ãª Ã¤Ã Â¸Ã² Ã¤Ã®Ã±Ã²Ã³Ã¯ Ãª Ã²Ã¥Ã¬ Ã¦Ã¥ Ã¤Ã Ã­Ã­Ã»Ã¬
   
   return (classes)
 }
