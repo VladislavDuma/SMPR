@@ -53,16 +53,16 @@ kwNN_for_sorted_array <- function(xl, k, q)
   return (class)
 }
 
-LOO <- function(xl)                             # подбор оптимального K
+LOO <- function(xl)                             
 {
   print("LOO")
   l <- nrow(xl)
   n <- ncol(xl)
-  qRange <- seq(0.1, 1, 0.1)                    # диапазон для q - вес
+  qRange <- seq(0.1, 1, 0.1)                    
   LOO_K <- matrix(0, l-1, length(qRange))
   for (i in 1:l) {
-    xt <- xl[i, 1:2]                            # i-й объект выборки
-    orderedXl <- sortObjectByDist(xl[-i, ], xt) # Выборка без i-го объект
+    xt <- xl[i, 1:2]                            
+    orderedXl <- sortObjectByDist(xl[-i, ], xt) 
     for (k in 1:(l-1)) {
       q_cnt <- 1
       for (q in qRange) {
@@ -73,10 +73,10 @@ LOO <- function(xl)                             # подбор оптимального K
       }
     }
   }
-  return (LOO_K) # матрица зависимостей LOO от k и q
+  return (LOO_K) 
 }
 
-Opt_K <- function(LOO_K) # выбираем оптимальный k
+Opt_K <- function(LOO_K) 
 { 
   print("Opt_K")
   optIndex <- 1
@@ -105,10 +105,7 @@ Opt_Q <- function(k, LOO_K)
       optIndex <- i
     }
   }
-  print(optIndex)
-  optIndex <- optIndex
-  print(optIndex)
-  return (optIndex / 10) #делим на количество строк матрицы LOO_K
+  return (optIndex / 10) 
 }
 
 drowPoints <- function(xl, LOO_K, k, q)
@@ -117,7 +114,7 @@ drowPoints <- function(xl, LOO_K, k, q)
   l <- nrow(xl)
   n <- ncol(xl)
   cnt <- 1
-  # карта классификаций выборки ирисы фишера
+  
   classField <- matrix(NA, length(seq(0, 7, 0.1)) * length(seq(0, 2.5, 0.1)), n)
   
   for(i in seq(0, 7, 0.1)){
@@ -130,17 +127,15 @@ drowPoints <- function(xl, LOO_K, k, q)
     }
   }
   print("Drow")
-  # рисуем карту классификации методом kwNN и LOO
+  
   colors <- c("setosa" = "red", "versicolor" = "green3", "virginica" = "blue")
   q10 = q * 10
   par(mfrow=c(1, 2))
   
-  # Карта классификации
-  plot(iris[, 3:4], pch = 21, bg = colors[iris$Species], col = colors[iris$Species], main="Классификация ирисов Фишера методом kwNN", xlab = "Длина лепестка", ylab = "Ширина лепестка", asp = 1)
+  plot(iris[, 3:4], pch = 21, bg = colors[iris$Species], col = colors[iris$Species], main="ГЉГ«Г Г±Г±ГЁГґГЁГЄГ Г¶ГЁГї ГЁГ°ГЁГ±Г®Гў Г”ГЁГёГҐГ°Г  Г¬ГҐГІГ®Г¤Г®Г¬ kwNN", xlab = "Г„Г«ГЁГ­Г  Г«ГҐГЇГҐГ±ГІГЄГ ", ylab = "ГГЁГ°ГЁГ­Г  Г«ГҐГЇГҐГ±ГІГЄГ ", asp = 1)
   points(classField[, 1:(n-1)], pch = 1, bg = colors[classField[, n]], col = colors[classField[, n]])
   
-  # График LOO
-  plot(LOO_K[1:nrow(LOO_K), q10], type = "l", bg = "red", col = "red", main = "Оценка оптимальности  k по LOO", xlab = "Значения k", ylab = "Значения LOO")
+  plot(LOO_K[1:nrow(LOO_K), q10], type = "l", bg = "red", col = "red", main = "ГЋГ¶ГҐГ­ГЄГ  Г®ГЇГІГЁГ¬Г Г«ГјГ­Г®Г±ГІГЁ  k ГЇГ® LOO", xlab = "Г‡Г­Г Г·ГҐГ­ГЁГї k", ylab = "Г‡Г­Г Г·ГҐГ­ГЁГї LOO")
   points(k, LOO_K[k, q10], pch = 21, bg = "blue", col = "blue")
   label = paste("k = ", k, "\n", "LOO = ", round(LOO_K[k, q10], 3))
   text(k, LOO_K[k, q10], labels = label, pos = 3)
