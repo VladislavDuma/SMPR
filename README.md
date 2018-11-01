@@ -47,7 +47,7 @@
 
 ![LOO_for_kNN.png](https://github.com/VladislavDuma/SMPR/blob/master/img/LOO_for_kNN_3.png)
 
-Следовательно оптимальным *k* на выборке Ирисы Фишера явлется значение *k = 6*. Построим графики *kNN* и *LOO*:
+Следовательно оптимальным *k* на выборке Ирисы Фишера явлется значение *k = 6*. Построим графики *kNN*:
 
 ![kNN_k6.png](https://github.com/VladislavDuma/SMPR/blob/master/img/kNN_k6_v1.png)
 
