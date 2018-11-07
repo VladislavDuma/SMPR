@@ -124,4 +124,7 @@
 ![parz_tr.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_trian.png)
 
 *Гауссовское ядро*
-![parz_gs.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_Gauss.png)
+![parz_gs.png](https://github.com/VladislavDuma/SMPR/blob/master/img/Parzen_Gauss.png)
+
+*Прямоугольное ядро*
+![parz_gs.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_Pr.png)
