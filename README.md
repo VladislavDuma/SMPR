@@ -111,3 +111,17 @@
 Функция веса в таком случае выглядит следующим образом: ![](http://latex.codecogs.com/gif.latex?w%28i%2C%20z%29%20%3D%20K%28%5Cfrac%7B%5Crho%28z%2C%20x_%7Bi%7D%29%7D%7Bh%7D%29)
 
 Где i - номер объекта выборки, z - классифицируемый объект, xi - i-й объект выборки, h - ширина окна, K - функция ядра.
+
+В результате на выборке Ириса Фишера мы получили следующие результаты:
+
+*Ядро Епанечникова*
+![parz_ep.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_Ep.png)
+
+*Квартическое ядро*
+![parz_qt.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_Qart.png)
+
+*Треугольное ядро*
+![parz_tr.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_trian.png)
+
+*Гауссовское ядро*
+![parz_gs.png](https://github.com/VladislavDuma/SMPR/blob/master/img/parzen_Gauss.png)
