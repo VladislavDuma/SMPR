@@ -229,7 +229,7 @@
 Примеры работы метода потенциальных функций на разных типах ядра:
 
 *Ядро Епанечникова*
-![potential_epanech_core.png](https://github.com/VladislavDuma/SMPR/blob/master/img/potential_epanech_core.png)
+![potential_epanech_core.png](https://github.com/VladislavDuma/SMPR/blob/master/img/potential_epanech_core_v2.png)
 
 *Квартическое ядро*
 ![potential_quarter_core.png](https://github.com/VladislavDuma/SMPR/blob/master/img/potential_quarter_core.png)
