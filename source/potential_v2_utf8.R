@@ -80,7 +80,7 @@ potentialFunction <- function(distances, potentials, h, xl, type_core) {
     weights[class] <- weights[class] + potentials[i] * type_core(r) # Считается его вес, и прибавляется к общему ввесу его класса
   }
   if (max(weights) != 0) return (names(which.max(weights))) # Если есть веса больше нуля, то вернуть класс с наибольшим весом
-  return ("") # Если точка не проклассифицировалась, то вернуть пустую строку
+  return (0) # Если точка не проклассифицировалась, то вернуть пустую строку
 }
 
 ClassMap <- function(xl, h, potentials, type_core) {
@@ -94,7 +94,7 @@ ClassMap <- function(xl, h, potentials, type_core) {
       z <- c(i, j)
       distances <- getDistances(xl, z)
       class <- potentialFunction(distances, potentials, h, xl, type_core)
-      if (class != "") {
+      if (class != 0) {
         classMatrix[cnt, ] <- c(z[1], z[2], class)
         cnt <- cnt + 1
       }
