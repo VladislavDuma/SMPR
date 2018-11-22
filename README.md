@@ -226,6 +226,59 @@
 
 *Метод потенциальных функций* - метрический классификатор, частный случай метода ближайших соседей. Позволяет с помощью простого алгоритма оценивать вес («важность») объектов обучающей выборки при решении задачи классификации.
 
+Алгоритм метода потенциальных функций:
+
+	potentialFunction <- function(distances, potentials, h, xl, type_core) {
+	  l <- nrow(xl)
+	  n <- ncol(xl)
+	  classes <- xl[, n]
+	  weights <- table(classes) # Таблица для весов классов
+	  weights[1:length(weights)] <- 0 # По умолчанию все веса равны нулю
+	  for (i in 1:l) { # Для каждого объекта выборки
+	    class <- xl[i, n] # Берется его класс
+	    r <- distances[i] / h[i]
+	    weights[class] <- weights[class] + potentials[i] * type_core(r) # Считается его вес, и прибавляется к общему ввесу его класса
+	  }
+	  if (max(weights) != 0) return (names(which.max(weights))) # Если есть веса больше нуля, то вернуть класс с наибольшим весом
+	  return (0) # Если точка не проклассифицировалась вернуть 0
+	}
+
+Алгоритм поиска потенциала:
+
+	getPotentials <- function(xl, h, eps, type_core)
+	{
+	  l <- nrow(xl) # строки
+	  n <- ncol(xl) # столбцы (размерность)
+	  potentials <- rep(0, l)
+	  distances_to_points <- matrix(0, l, l)
+	  err <- eps + 1 # будем считать количество ошибок на выборке 
+	  # err = (eps + 1) для предотвращения раннего выхода из цикла
+	  # матрица дистанций до других точек выборки
+	  for (i in 1:l)
+	    distances_to_points[i,] <- getDistances(xl, c(xl[i, 1], xl[i, 2])) 
+	  # xl - выборка, xl[i] - текущая точка и её координата
+	  while(err > eps){
+	    while (TRUE) {
+	      # Продолжаем, пока не встретим ошибочное определение к классу
+	      cur <- sample(1:l, 1) # выбираем случайную точку из выборки
+	      class <- potentialFunction(distances_to_points[cur, ], potentials, h, xl, type_core)
+
+	      if (class != xl[cur, n]) { # если не соответсвует классу
+		potentials[cur] = potentials[cur] + 1 # увеличиваем потенциал
+		break
+	      } #if
+	    } #while(true)
+
+	    # считаем количество ошибок
+	    err <- 0
+	    for (i in 1:l) {
+	      class <- potentialFunction(distances_to_points[i, ], potentials, h, xl, type_core)
+	      err <- err + (class != xl[i, n])
+	    }
+	  }
+	  return (potentials)
+	}
+
 Примеры работы метода потенциальных функций на разных типах ядра:
 
 *Ядро Епанечникова*
