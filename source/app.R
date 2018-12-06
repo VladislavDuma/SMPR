@@ -36,8 +36,8 @@ ui <- fluidPage(
          
          sliderInput("step", "Step:", min = 0.001, max = 0.02, value = 0.005, step = 0.001),
          fluidRow(
-           column(6, sliderInput("mX", "mX:", min = -3, max = 3, value = 0)),
-           column(6, sliderInput("mY", "mY:", min = -3, max = 3, value = 0))
+           column(6, sliderInput("mX", "mX:", min = -3, max = 3, value = 0, step = 0.1)),
+           column(6, sliderInput("mY", "mY:", min = -3, max = 3, value = 0, step = 0.1))
          )
       ),
       
