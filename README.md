@@ -332,12 +332,15 @@
 ![](http://latex.codecogs.com/gif.latex?%5Cmu%20%5Cin%20R%5E%7Bn%7D) - мат. ожидание каждого признака  
 ![](http://latex.codecogs.com/gif.latex?%5CSigma%20%5Cin%20R%5E%7Bn%5Ctimes%20n%7D) - матрица ковариации признаков. Симметричная, невырожденная, положительно определённая.
 
-
-
 *Примеры работы программы*
+
+1. Если признаки некоррелированы, т. е. матрица ковариации диагональна, то линии уровня имеют форму эллипсоидов, параллельных осям координат, вытянутых относительно признака, значение для которого в матрице выше.
+
 ![level_lines_1.PNG](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_1.PNG)
 
 ![level_lines_2.PNG](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_2.PNG)
+
+2. Если признаки коррелированы, то есть матрица ковариации не диагональна, то линии уровня имеют форму эллипсоидов, наклонённых относительно осей координат.
 
 ![level_lines_3.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_3.PNG)
 
