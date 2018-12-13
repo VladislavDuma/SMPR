@@ -352,6 +352,8 @@
 
 ![level_lines_6.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_6.PNG)
 
+*С включённой картой классификации, без линий уровня*
+
 ![level_lines_4.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_4.PNG)
 
 Работу программы с реализацией на Shiny (линии уровня) можно посмотреть здесь [здесь](https://vladislav-duma.shinyapps.io/level_lines/)
