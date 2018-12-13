@@ -343,8 +343,6 @@
 
 ![level_lines_2.PNG](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_2.PNG)
 
-*С включённой картой классификации*
-
 ![level_lines_1.PNG](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_1.PNG)
 
 2. Если признаки коррелированы, то есть матрица ковариации не диагональна, то линии уровня имеют форму эллипсоидов, наклонённых относительно осей координат.
@@ -352,8 +350,6 @@
 ![level_lines_3.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_3.PNG)
 
 ![level_lines_6.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_6.PNG)
-
-*С включённой картой классификации, без линий уровня*
 
 ![level_lines_4.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_4.PNG)
 
