@@ -320,6 +320,17 @@
 
 ## Байесовские алгоритмы классификации ##
 
+### Нормальный дискриминантный анализ ###
+
+Нормальный дискриминантный анализ - это специальный случай байесовского классификации, когда предполагается, что плотности всех классов  являются многомерными нормальными.
+Функция плотности многомерного нормального распределения выглядит следующим образом:
+![](http://latex.codecogs.com/gif.latex?N%28x%2C%20%5Cmu%2C%20%5CSigma%29%3D%5Cfrac%7B1%7D%7B%5Csqrt%28%282%5Cpi%29%5E%7Bn%7D%7C%5CSigma%7C%29%7De%5E%7B-%5Cfrac%7B1%7D%7B2%7D%28%28x-%5Cmu%29%5CSigma%5E%7B-1%7D%28x-%5Cmu%29%5E%7BT%7D%29%7D), где  
+![](http://latex.codecogs.com/gif.latex?x%20%5Cin%20R%5E%7Bn%7D) - объект, состоящий из *n* признаков  
+![](http://latex.codecogs.com/gif.latex?%5Cmu%20%5Cin%20R%5E%7Bn%7D) - мат. ожидание каждого признака  
+![](http://latex.codecogs.com/gif.latex?%5CSigma%20%5Cin%20R%5E%7Bn%5Ctimes%20n%7D) - матрица ковариации признаков. Симметричная, невырожденная, положительно определённая.
+
+
+
 *Примеры работы программы*
 ![level_lines_1.PNG](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_1.PNG)
 
@@ -330,6 +341,5 @@
 ![level_lines_4.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_4.PNG)
 
 Работу программы с реализацией на Shiny (линии уровня) можно посмотреть здесь [здесь](https://vladislav-duma.shinyapps.io/level_lines/)
-
 
 [Вернуться к содержанию](#содержание)
