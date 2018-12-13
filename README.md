@@ -322,4 +322,13 @@
 
 Работу программы с реализацией на Shiny (линии уровня) можно посмотреть здесь [здесь](https://vladislav-duma.shinyapps.io/level_lines/)
 
+*Примеры работы программы*
+![level_lines_1.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_1.png)
+
+![level_lines_2.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_2.png)
+
+![level_lines_3.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_3.png)
+
+![level_lines_4.png](https://github.com/VladislavDuma/SMPR/blob/master/img/level_lines/level_lines_4.png)
+
 [Вернуться к содержанию](#содержание)
