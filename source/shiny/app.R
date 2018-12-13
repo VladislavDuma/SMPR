@@ -1,15 +1,6 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 
-# Define UI for application that draws a histogram
+# Define UI for application
 ui <- fluidPage(
    
    # Application title
@@ -69,7 +60,6 @@ server <- function(input, output) {
       }
       output$message = renderText({"det > 0"})
       
-      #par(bg = 'white', fg = 'black')
       plot(-5:5, -5:5, type = "n", asp = 1)
       
       minX <- -sigma[1, 1] - 4
