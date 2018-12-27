@@ -11,7 +11,8 @@
 * [Байесовские алгоритмы классификации](#байесовские-алгоритмы-классификации)
 	* [Нормальный дискриминантный анализ](#нормальный-дискриминантный-анализ)
 	* [Наивный байесовский классификатор](#наивный-байесовский-классификатор)
-	* [Подстановочный алгоритм(Plug-in)](#plug-in)
+	* [Подстановочный алгоритм (Plug-in)](#plug-in)
+	* [ЛДФ](#лдф)
 
 #### Сводная таблица для метрических методов классификации ####
 
@@ -435,6 +436,14 @@
 ![](http://latex.codecogs.com/gif.latex?%5CSigma%28x%2C%20%5Cmu%29%20%3D%20%5Cfrac%7B1%7D%7Bm%20-%20%7CY%7C%7D%5Csum%5Em_%7Bi%3D1%7D%28x_i-%5Chat%20%5Cmu_%7Byi%7D%29%28x_i-%5Chat%20%5Cmu_%7Byi%7D%29%5ET)
 
 где *|Y|* - мощность множества классов, *x* - объекты выборки.
+
+Примеры работы программы:
+
+![ldf_1.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/ldf_1.PNG)
+
+![ldf_2.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/ldf_2.PNG)
+
+![compare_1.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/compare_1.PNG)
 
 [К началу алгоритма (ЛДФ)](#лдф)
 
