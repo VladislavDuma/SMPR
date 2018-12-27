@@ -364,6 +364,14 @@
 В данном случае решающее правило принимает вид:  
 ![](http://latex.codecogs.com/gif.latex?a%28x%29%3Darg%20%5Cmax_%7By%5Cin%20Y%7D%28%5Cln%28%5Clambda_%7By%7DP_y%29&plus;%5Csum_%7Bj%3D1%7D%5E%7Bn%7D%5Cln%28p_%7Byj%7D%28%5Cxi_j%29%29%29)
 
+Несколько примеров работы программы представлены ниже:
+
+![naive_bayes_1.png](https://github.com/VladislavDuma/SMPR/blob/master/source/naive_bayes/naive_bayes_1.PNG)
+
+![naive_bayes_2.png](https://github.com/VladislavDuma/SMPR/blob/master/source/naive_bayes/naive_bayes_2.PNG)
+
+![naive_bayes_3.png](https://github.com/VladislavDuma/SMPR/blob/master/source/naive_bayes/naive_bayes_3.PNG)
+
 Работу программы с реализацией на Shiny (наивный байесовский классификатор) можно посмотреть [здесь](https://vladislav-duma.shinyapps.io/naive_bayes_wow/)
 
 [К началу алгоритма (наивный байесовский классификатор)](#наивный-байесовский-классификатор)
