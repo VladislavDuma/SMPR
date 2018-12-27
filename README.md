@@ -411,6 +411,18 @@
 
 ![](http://latex.codecogs.com/gif.latex?%5Clambda_1%5Chat%20P_1%5Chat%20p_1%28x%29%3D%5Clambda_2%5Chat%20P_2%20%5Chat%20p_2%28x%29)
 
+Примеры работы программы:
+
+![plug_1.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/plug_1.PNG)
+
+![plug_2.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/plug_2.PNG)
+
+![plug_3.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/plug_3.PNG)
+
+![plug_4.png](https://github.com/VladislavDuma/SMPR/blob/master/img/bayes/plug_4.PNG)
+
+Работу программы с реализацией на Shiny (наивный байесовский классификатор) можно посмотреть [здесь](https://vladislav-duma.shinyapps.io/bayes_classifiers_v2_wow/)
+
 [К началу алгоритма (plug-in)](#plug-in)
 
 [Вернуться к содержанию](#содержание)
